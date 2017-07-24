@@ -51,7 +51,17 @@ Dots and bracket notation work similarlya s far as functionality. The syntax & r
      
     box['material'] //will return cardboard
     
- 
+
+The **COOL** thing about bracket notation is that you can evaluate an expression in it unlike dot notation. An example would be:
+
+    var boc = {};
+    box.material = 'cardboard';
+     
+    var func = function(){
+        return "material";
+        };
+    box[func()] //will return 'cardboard' cause the functions  
+    evaluates to 'material' inside the bracket.
 
     
     
