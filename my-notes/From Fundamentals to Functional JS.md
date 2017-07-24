@@ -24,7 +24,7 @@ This is also doing the same:
         var box = {material: "cardboard"}
      
 
-    ___NB: Anywhere you see a dot on JS it means you are accesing a property on an object. Everything to the left of a dot is an object.___
+___NB: Anywhere you see a dot on JS it means you are accesing a property on an object. Everything to the left of a dot is an object.___
 
 We use dot notation to add a property and also to access them:
 
