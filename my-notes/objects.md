@@ -62,6 +62,67 @@ The **COOL** thing about bracket notation is that you can evaluate an expression
         };
     box[func()] //will return 'cardboard' cause the functions  
     evaluates to 'material' inside the bracket.
+    
+    
+### Do's and Don'ts    
+
+    var box = {};
+     
+    box.material = 'cardboard';
+    var key = 'material'
+     
+    box['key'] //will return undefined cause its searching  
+    for a property name called key.
+     
+    box.key //will also return undefined cause its also searching  
+    for a property called key.
+     
+    box[key] //will return 'cardboard' cause its evaluating the variable key.
+    
+    
+1. Don't  use dot notation with a variabe.
+2. Don't use quotations around your variable.  
+
+
+### Object Literal
+This is the syntax for an object literal:
+
+	var box = {
+		    size: 9,
+		    material: "cardboard"
+	};
+	
+   
+### Iteration
+Objects have a special loop called for in:
+
+    for(var key in object) {
+	        console.log(key) //will return the object's properties
+	    }
+
+Since in ***JS***	most of the things are objects, you can use ***for in loop*** to them.
+
+
+### Iteration
+Objects have a special loop called for in:
+
+    for(var key in object) {
+	        console.log(key) //will return the object's properties
+	    }
+
+Since in ***JS***	most of the things are objects, you can use ***for in loop*** to them.
+
+If you wanted to access the values in the object with the ***for in loop***
+
+    for (var key in object) {
+	        console.log(object[key]
+	    }
+
+***NB: Always use bracket notations in loops cause it evaluates the variable.***
+-
+
+
+
 
     
     
