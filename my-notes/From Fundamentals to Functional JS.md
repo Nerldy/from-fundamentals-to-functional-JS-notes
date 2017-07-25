@@ -54,7 +54,7 @@ Dots and bracket notation work similarlya s far as functionality. The syntax & r
 
 The **COOL** thing about bracket notation is that you can evaluate an expression in it unlike dot notation. An example would be:
 
-    var boc = {};
+    var box = {};
     box.material = 'cardboard';
      
     var func = function(){
