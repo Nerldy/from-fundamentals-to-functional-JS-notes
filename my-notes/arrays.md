@@ -39,7 +39,9 @@ Array syntax:
 		    
 		   }
 
+We use the `for (i=0; i<something; i==) in arrays because we don't care about the names in arrays but the values. So we get access them via their indices.`
 
-
+[the-rules
+](https://github.com/arnodhis/from-fundamentals-to-functional-JS-notes/blob/master/my-notes/the-rules.JPG)
       
       
