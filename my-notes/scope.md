@@ -36,3 +36,7 @@ Variable can be accessed anywhere in the document.
 	bs(); //this will not run cause bs() is local to blender().
 
 	blender("blueberry");
+
+### *Precedence*
+
+Local variable always wins.
