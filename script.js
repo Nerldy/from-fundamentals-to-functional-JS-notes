@@ -1,27 +1,20 @@
-// https://github.com/bgando/object-exercises/
-
-// Objects exercise
-
-const ANIMAL = {};
-ANIMAL.username = "piggy";
-
-ANIMAL['tagline'] = "eat all you can";
-
-const NOISES = [];
-ANIMAL['noises'] = NOISES;
-
-let counter = 1;
-for (let prop in ANIMAL) {
-    console.log(prop);
-    if (prop === 'username') {
-        console.log("Hi my name is " + ANIMAL.username);
-
-    }
-    if (prop === 'tagline') {
-        console.log("I like to say " + ANIMAL.tagline);
-    }
-
-    counter++;
+function AnimalMaker(name) {
+    return {
+        speak: function () {
+            console.log("my name is  " + name);
+        },
+        name: name
+    };
 }
-console.log("The for in loop was looped " + counter + ' times');
 
+const animalNames = ['sheep', 'liger', 'big bird'];
+let animalObject = [];
+for (var i = 0; i < animalNames.length; i++) {
+    animalObject.push(AnimalMaker(animalNames[i]));
+}
+
+console.log(animalObject);
+
+for (var j = 0; j < animalObject.length; j++) {
+    console.log(animalObject[j].speak())
+}
